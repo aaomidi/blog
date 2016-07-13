@@ -7,13 +7,19 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="https://aaomidi.com/extras/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="https://aaomidi.com/extras/styles/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://aaomidi.com/extras/styles/font-awesome.min.css">
+  <link rel="stylesheet" href="https://aaomidi.com/extras/styles/style.css">
   <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/bootstrap-theme.min.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/font-awesome.min.css" | prepend: site.baseurl }}">
 
-  <script type="text/javascript" src="{{ "/scripts/jquery.min.js" | prepend: site.baseurl }}"></script>
-  <script type="text/javascript" src="{{ "/scripts/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="https://aaomidi.com/extras/scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="https://aaomidi.com/extras/scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://aaomidi.com/extras/scripts/load.js"></script>
+
+  <script type="text/javascript">
+    load(document, "blog");
+  </script>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
