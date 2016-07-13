@@ -16,6 +16,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://aaomidi.com/" # the base hostname & protocol for your site
 twitter_username: aaomidi
 github_username:  aaomidi
+repository: aaomidi/blog
 
 # Build settings
 markdown: kramdown
